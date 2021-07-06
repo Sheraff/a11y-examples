@@ -1,0 +1,55 @@
+:root {
+	--gap: 16px;
+	--slides: 3;
+}
+
+body {
+	margin: 0
+}
+
+.sr-only {
+	display: none;
+}
+
+#container {
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	scroll-padding: 0 var(--gap);
+}
+
+#container::-webkit-scrollbar {
+	width: 0;
+}
+
+#track {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: max-content;
+	column-gap: var(--gap);
+	padding: var(--gap);
+}
+
+#track > * {
+	scroll-snap-align: start;
+	scroll-snap-stop: normal;
+	width: calc((100vw - var(--gap)) / var(--slides) - var(--gap));
+	aspect-ratio: 2 / 3;
+}
+
+#track > *:focus {
+	box-shadow: 0 0 0 4px currentColor;
+	outline: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+button[disabled] {
+	filter: grayscale(1);
+}
