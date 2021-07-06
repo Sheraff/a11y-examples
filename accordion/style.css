@@ -13,7 +13,7 @@ button[aria-expanded="true"]::after {
 	transform: scale(-1);
 }
 
-button[aria-expanded="true"]  + div{
+button[aria-expanded="true"] + div{
 	opacity: 1;
 }
 
