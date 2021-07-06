@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="./style.css">
+<div class="tabbed-content">
+	<ul class="tabs-list" role='tablist'>
+		<li class="current">
+			<button aria-controls="apples" aria-selected="true" id="tab-apples" role='tab' class='tab selected'
+				tabindex="0" type="button">
+				Apples
+			</button>
+		</li>
+
+		<li>
+			<button aria-controls="bananas" aria-selected='false' id="tab-bananas" role='tab' tabindex='-1' class='tab'
+				type="button">
+				Bananas
+			</button>
+		</li>
+
+		<li class='last'>
+			<button aria-controls='pears' aria-selected="false" id="tab-pears" role='tab' tabindex='-1' class='tab'
+				type="button">
+				Pears
+			</button>
+		</li>
+	</ul>
+
+	<div aria-labelledby="tab-apples" class="tab-panel current" id="apples" role='tabpanel' tabindex="0">
+		<h2>Apples</h2>
+		<p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae
+			curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae
+			aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu
+			sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo
+			donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus
+			libero.
+	</div>
+
+	<div aria-labelledby="tab-bananas" class="tab-panel hidden" role='tabpanel' id="bananas" tabindex="0">
+		<h2>Bananas</h2>
+		<p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae
+			curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae
+			aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu
+			sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo
+			donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus
+			libero.
+	</div>
+
+	<div aria-labelledby="tab-pears" class="tab-panel hidden" id="pears" role='tabpanel' tabindex="0">
+		<h2>Pears</h2>
+		<p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae
+			curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae
+			aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu
+			sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo
+			donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus
+			libero.
+	</div>
+
+	<p class="Tabs_back">
+		<button type="button" class="sr-only sr-only-focusable">
+			Back to tabs of site selection
+		</button>
+	</p>
+</div>
