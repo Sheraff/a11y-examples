@@ -1,0 +1,16 @@
+#container {
+	position: relative;
+}
+
+#container [aria-expanded="false"] + div {
+	display: none;
+}
+
+#container div {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: black;
+	padding: 1em;
+	margin: 1em;
+}
