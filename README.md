@@ -8,6 +8,7 @@
 - [pop-over](https://sheraff.github.io/a11y-examples/pop-over)
 - [drawer-nav](https://sheraff.github.io/a11y-examples/drawer-nav)
 - [filter-list](https://sheraff.github.io/a11y-examples/filter-list)
+- WIP [tabs](https://sheraff.github.io/a11y-examples/tabs)
 
 ## Examples
 - [general page structure](https://sheraff.github.io/a11y-examples/page-struct)
