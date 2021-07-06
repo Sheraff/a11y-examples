@@ -1,0 +1,28 @@
+button::after {
+	content: '⬇';
+	display: inline-block;
+	transition: transform 500ms;
+}
+
+button + div {
+	opacity: 0;
+	transition: opacity 500ms;
+}
+
+button[aria-expanded="true"] ::after {
+	transform: scale(-1);
+}
+
+button[aria-expanded="true"]  + div{
+	opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+	button::after {
+		transition-duration: 1ms;
+	}
+
+	button + div {
+		transition-duration: 1ms;
+	}
+}
