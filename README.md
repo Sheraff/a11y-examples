@@ -11,3 +11,4 @@
 ## Examples
 - [page-struct](https://sheraff.github.io/a11y-examples/page-struct)
 - [table](https://sheraff.github.io/a11y-examples/table)
+- [img](https://sheraff.github.io/a11y-examples/img)
