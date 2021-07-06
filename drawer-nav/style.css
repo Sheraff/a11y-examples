@@ -6,10 +6,15 @@
 	padding: 10px;
 	transform: translateX(-100%);
 	transition: visibility 0s 500ms, transform 500ms;
+	color: white;
 }
 
 #drawer.show {
 	visibility: visible;
 	transform: translateX(0);
 	transition: visibility 0s, transform 500ms;
+}
+
+button {
+	color: black;
 }
