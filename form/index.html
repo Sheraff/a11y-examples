@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="./style.css">
+<h1>Example of standard form</h1>
+<form autocomplete="on">
+	<fieldset>
+		<legend>Personal data</legend>
+
+		<div>
+			<b>Suggesting possible values</b>
+			<label id="userLabel" for="username">
+				Username
+				<span aria-hidden="true">*</span>
+				<span class="sr-only">(required)</span>
+			</label>
+			<input type="text" name="username" id="username" aria-labelledby="userLabel" aria-errormessage="userError"
+				list="availableNames" autocomplete="username" aria-invalid="true" required>
+			<span id="userError" aria-live="assertive">This name is already taken.</span>
+			<datalist id="availableNames">
+				<option value="Ponnappa">
+				<option value="Kazantzis">
+				<option value="Maureen">
+				<option value="Wong">
+				<option value="Ellawala">
+			</datalist>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend id='legend-1'>Can we add you to our email mailing list? <span class="required">(required)</span>
+		</legend>
+
+		<ul aria-labelledby='legend-1' role='radiogroup'>
+			<li>
+				<label for="yes">
+					<input id="yes" required="" type="radio" name="answers" value="yes">
+
+					Yes
+				</label>
+			</li>
+			<li>
+				<label for="no">
+					<input id="no" type="radio" name="answers" value="no">
+
+					No
+				</label>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Credit card info</legend>
+
+		<div>
+			<b>Using aria for errors</b>
+			<label id="expLabel" for="expire">
+				Expiration date
+				<span aria-hidden="true">*</span>
+				<span class="sr-only">(required)</span>
+			</label>
+			<input type="text" name="expire" id="expire" aria-labelledby="expLabel" aria-describedby="expDesc"
+				aria-errormessage="expError" aria-invalid="true" autocomplete="cc-exp" required>
+			<span id="expDesc">MM/YYYY</span>
+			<span id="expError" aria-live="assertive">Use the format MM/YYYY.</span>
+		</div>
+
+		<div>
+			<b>Using native validation</b>
+			<label id="ccvLabel" for="verif-num">
+				Verification code
+				<span aria-hidden="true">*</span>
+				<span class="sr-only">(required)</span>
+			</label>
+			<input type="text" name="verif-num" id="verif-num" aria-labelledby="ccvLabel" aria-describedby="ccvDesc"
+				aria-errormessage="ccvError" minlength="3" maxlength="4" pattern="[0-9]+" autocomplete="cc-csc"
+				required>
+			<span id="ccvDesc">This is the 3-or-4-digit number on the back of the card</span>
+			<span id="ccvError" aria-live="assertive"></span>
+		</div>
+
+	</fieldset>
+	<button type="submit">button</button>
+</form>
+
+
+<hr>
+<hr>
+
+<h1>Example of search form</h1>
+
+<form method="GET" action="/search-page" role="search">
+	<label for="search">Search the site:</label>
+	<input type="search" id="search" name="keywords" minlength="1">
+	<button type="submit">
+		<span aria-hidden="true">🔍</span>
+		<span class="sr-only">Search</span>
+	</button>
+	<button type="reset">
+		<span aria-hidden="true">╳</span>
+		<span class="sr-only">Clear</span>
+	</button>
+</form>
