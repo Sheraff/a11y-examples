@@ -27,7 +27,7 @@ div::before {
 	z-index: 1;
 	height: calc(100% * (1 + var(--decay-ratio)));
 	position: relative;
-	bottom: 100% * var(--decay-ratio);
+	bottom: calc(100% * var(--decay-ratio));
 	background: linear-gradient(
 		to top, 
 		rgba(0,0,0,var(--opacity)),
@@ -39,7 +39,7 @@ div::before {
 div::after {
 	content: '';
 	grid-row: 1/-1;
-	padding-bottom: 3 / 2 * 100%;
+	padding-bottom: calc(3 / 2 * 100%);
 	pointer-events: none;
 }
 
