@@ -1,5 +1,3 @@
-# A11y examples
-
 ## Components
 - [bread-crumbs](https://sheraff.github.io/a11y-examples/bread-crumbs)
 - [img-card](https://sheraff.github.io/a11y-examples/img-card)
