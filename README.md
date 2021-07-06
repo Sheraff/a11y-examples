@@ -10,6 +10,7 @@
 - [filter-list](https://sheraff.github.io/a11y-examples/filter-list)
 
 ## Examples
-- [page-struct](https://sheraff.github.io/a11y-examples/page-struct)
+- [general page structure](https://sheraff.github.io/a11y-examples/page-struct)
 - [table](https://sheraff.github.io/a11y-examples/table)
 - [img](https://sheraff.github.io/a11y-examples/img)
+- [form](https://sheraff.github.io/a11y-examples/form)
