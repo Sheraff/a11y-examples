@@ -1,0 +1,60 @@
+section {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(auto, 200px));
+	justify-content: center;
+}
+
+div {
+	display: grid;
+	grid-template-areas: 
+		"top"
+		"bottom";
+	grid-template-rows: 1fr auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	background: black;
+}
+div::before {
+	--decay-ratio: 1;
+	--opacity: .7;
+
+	content: '';
+	grid-area: bottom;
+	z-index: 1;
+	height: calc(100% * (1 + var(--decay-ratio)));
+	position: relative;
+	bottom: 100% * var(--decay-ratio);
+	background: linear-gradient(
+		to top, 
+		rgba(0,0,0,var(--opacity)),
+		rgba(0,0,0,var(--opacity)) calc(100% / (1 + var(--decay-ratio))),
+		rgba(0,0,0,0)
+	)
+}
+
+div::after {
+	content: '';
+	grid-row: 1/-1;
+	padding-bottom: 3 / 2 * 100%;
+	pointer-events: none;
+}
+
+div > *, div::before, div::after {
+	grid-column-start: 1;
+}
+
+img {
+	grid-row: 1/-1;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+p {
+	grid-area: bottom;
+	z-index: 2;
+	padding: 1em;
+	margin: 0;
+}
