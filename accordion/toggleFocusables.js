@@ -26,8 +26,8 @@ const focusableMap = new Map()
  */
 function toggleFocusable(element, flag) {
 	if (flag) {
-		if (focusableMap.has(element)) {
-			const previous = focusableMap.get(element)
+		const previous = focusableMap.get(element)
+		if (typeof previous === 'number') {
 			focusableMap.delete(element)
 			element.setAttribute('tabindex', previous)
 		} else {
