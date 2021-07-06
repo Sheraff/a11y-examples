@@ -7,6 +7,7 @@
 - [accordion](https://sheraff.github.io/a11y-examples/accordion)
 - [pop-over](https://sheraff.github.io/a11y-examples/pop-over)
 - [drawer-nav](https://sheraff.github.io/a11y-examples/drawer-nav)
+- [filter-list](https://sheraff.github.io/a11y-examples/filter-list)
 
 ## Examples
 - [page-struct](https://sheraff.github.io/a11y-examples/page-struct)
