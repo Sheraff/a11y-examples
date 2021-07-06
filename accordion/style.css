@@ -9,7 +9,7 @@ button + div {
 	transition: opacity 500ms;
 }
 
-button[aria-expanded="true"] ::after {
+button[aria-expanded="true"]::after {
 	transform: scale(-1);
 }
 
