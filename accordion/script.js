@@ -12,7 +12,7 @@ function onClick(event) {
 	/** @type {HTMLButtonElement} */
 	const button = event.target
 	const content = button.nextElementSibling
-	const state = button[buttonState] ?? true
+	const state = button[buttonState] ?? button.getAttribute('aria-expanded') === 'false'
 	button.setAttribute('aria-expanded', state ? 'true' : 'false')
 	content.setAttribute('aria-hidden', state ? 'false' : 'true')
 	toggleInternalFocusables(content, state)
