@@ -61,10 +61,10 @@ En fonction des situations détaillées précédemment, afin de rendre le site a
 
 ### Qu’est-ce que recommande le WCAG ?
 - catégories de reco
-	- perceivable
-	- operable
-	- understandable (incl. predictable)
-	- robust / responsive
+	- perceivable (perceptible) : équivalents textuels / contenus adaptables / distinguable
+	- operable (utilisable) : accessibles au clavier / suffisament de temps / navigation claire
+	- understandable (compréhensible) : lisible / prévisible / explication des erreurs
+	- robust (robuste) : responsive / pas de perte de contenu / adapté aux technologies d'assistance
 - un niveau (A, AA, AAA) est assigné à chaque reco
 	- “AAA” inclut toutes les recos, c’est + un idéal qu’une vraie cible business
 	- “AA” inclut “A” et “AA”, c’est la cible la plus courante, surtout pour les grosses institutions et les institutions publiques
