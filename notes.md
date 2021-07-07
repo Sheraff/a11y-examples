@@ -121,7 +121,9 @@ Dans certaines situations, il n’existe pas d’élément HTML qui ait exacteme
 
 ## À quoi ressemble un site accessible ?
 - Exemple de site complexe très accessible: [SNCF – Horaire, Train, Info Trafic, Services et Groupe International | SNCF](https://www.sncf.com/fr)
+    - "AA" (rgaa 3.0) à 100%, mars 2019
 - Exemple de site simple très peu accessible: [Achetez des Timbres, Envoyez Courrier, Colis - La Poste](https://www.laposte.fr/)
+    - "AA" à 53%, décembre 2020
 - Demo voice over macOS
 
 ## Quels sont les astuces les plus courantes à connaître ? 
